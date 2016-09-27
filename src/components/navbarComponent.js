@@ -17,7 +17,7 @@ class NavBarComponent extends Component {
         <Navbar.Collapse>
           <Nav className="navbar-right">
             <LinkContainer to="/portfolio">
-              <NavItem style={{backgroundColor : "white"}}>Portfolio</NavItem>
+              <NavItem>Portfolio</NavItem>
             </LinkContainer>
             <LinkContainer to="/about">
               <NavItem>About</NavItem>
