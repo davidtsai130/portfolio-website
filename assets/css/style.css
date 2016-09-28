@@ -43,7 +43,7 @@ margin-bottom: 60px;
 }
 
 html, body{
-font-size:16px;
+font-size:13px;
 }
 
 a{
@@ -170,12 +170,14 @@ letter-spacing:10px;
 text-transform:uppercase;
 }
 .social-bookmark{
-margin-top:30px;
+padding-top:10px;
+margin: auto;
+width: 50%;
 }
 .social-bookmark a{
-font-size:30px;
+font-size:22px;
 margin:0 5px;
-color:#fff;
+color:#A0A3A4;
 /*transition*/
 -webkit-transition:all 100ms ease 0s;
    -moz-transition:all 100ms ease 0s;
@@ -905,13 +907,12 @@ height:400px;
  bottom: 0;
  width: 100%;
  /* Set the fixed height of the footer here */
- height: 60px;
  background-color: #171717;
 }
 
 .footer p{
 margin:0;
-padding:15px 0;
+padding:10px;
 }
 
 .my-name span{
