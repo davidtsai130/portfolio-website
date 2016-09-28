@@ -4,7 +4,7 @@ class PortfolioComponent extends Component {
   render() {
     return (
       <div>
-            Portfolio Testing
+        <h1> portfolio </h1>
       </div>
     )
   }

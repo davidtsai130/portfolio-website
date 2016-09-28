@@ -4,7 +4,7 @@ class contactComponent extends Component {
   render() {
     return (
       <div>
-        contact Testing
+        <h1> let&#39;s chat! </h1>
       </div>
     )
   }

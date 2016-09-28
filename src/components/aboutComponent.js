@@ -10,7 +10,7 @@ class AboutComponent extends Component {
         <div className="row">
           <div className="col-sm-12 col-md-6 col-lg-6">
             <p>
-              After graduating from Rutgers Business School in May 2016 with a B.S. in Business Analytics and Information Technology, I and went on to complete the Web Development Immersive course at <a href="https://flatironschool.com/" target="_blank">Flatiron School</a> in August 2016.
+              After graduating from Rutgers Business School in May 2016 with a B.S. in Business Analytics and Information Technology, I went on to complete the Web Development Immersive course at <a href="https://flatironschool.com/" target="_blank">Flatiron School</a> in August 2016.
             </p>
           </div>
           <div className="col-sm-12 col-md-6 col-lg-6">
