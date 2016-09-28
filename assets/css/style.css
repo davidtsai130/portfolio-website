@@ -170,6 +170,7 @@ letter-spacing:10px;
 text-transform:uppercase;
 }
 .social-bookmark{
+text-align: center;
 padding-top:10px;
 margin: auto;
 width: 50%;
@@ -200,9 +201,15 @@ color:#A0A3A4;
         transform:rotate(360deg);
 opacity:.8;
 }
-.welcome-text{
-}
 
+@media (max-width: 768px) {
+  .social-bookmark {
+  text-align: left;
+  padding-top:10px;
+  margin: inherit;
+  width: 50%;
+  }
+}
 
 /* ------------------------------------	*/
 /*  		 2. Navigation Bar			*/

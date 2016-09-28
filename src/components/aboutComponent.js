@@ -19,7 +19,7 @@ class AboutComponent extends Component {
             </p>
           </div>
         </div>
-        <div className="col-sm-12 col-md-6 col-lg-6">
+        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <h3>Skills</h3>
           <ul>
             <li>HTML5</li>
@@ -33,7 +33,7 @@ class AboutComponent extends Component {
             <li>Redux</li>
           </ul>
         </div>
-        <div className="col-sm-12 col-md-6 col-lg-6">
+        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <h3> Interests </h3>
           <ul>
             <li>cars and motorcycles</li>
