@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ContactComponent from '../components/contactComponent'
-import { Jumbotron } from 'react-bootstrap';
 
 class ContactContainer extends Component {
   render() {

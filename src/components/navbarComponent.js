@@ -10,7 +10,7 @@ class NavBarComponent extends Component {
       <Navbar fixedTop>
         <Navbar.Header>
           <Navbar.Brand>
-            <Link to='/'><img src={require('../../assets/img/dtlogo.png')} /></Link>
+            <Link to='/'><img src={require('../../assets/img/dtlogo.png')} alt=""/></Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>

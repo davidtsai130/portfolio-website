@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import LandingComponent from '../components/landingComponent'
-import { Jumbotron } from 'react-bootstrap';
 
 class LandingContainer extends Component {
   render() {

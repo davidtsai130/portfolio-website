@@ -3,7 +3,6 @@ import '../assets/css/style.css'
 import '../assets/font-awesome-4.6.3/css/font-awesome.min.css'
 import NavBarContainer from './containers/navbarContainer'
 import FooterContainer from './containers/footerContainer'
-import LandingContainer from './containers/landingContainer'
 
 class App extends Component {
 
