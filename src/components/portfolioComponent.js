@@ -19,9 +19,9 @@ class PortfolioComponent extends Component {
                     <Link to={{
                     pathname: `portfolio/flatiron-go`,
                     state: { modal: true, returnTo: this.props.location.pathname }
-                    }}
-                    className="btn btn-md btn-primary">Images</Link>
-                    
+                    }}>Images</Link>
+                  <br/>
+
           				<p>
           					<a href="https://github.com/gracejuster/flatiron-go" target="_blank">Github Repository </a>
           				</p>
@@ -39,8 +39,8 @@ class PortfolioComponent extends Component {
                     <Link to={{
                     pathname: `portfolio/mapmyrepo`,
                     state: { modal: true, returnTo: this.props.location.pathname }
-                    }}
-                    className="btn btn-md btn-primary">Images</Link>
+                    }}>Images</Link>
+                  <br/>
 
                   <p>
                     <a href="https://github.com/greatermeans/mapmyrepo" target="_blank">Github Repository </a>
@@ -59,8 +59,8 @@ class PortfolioComponent extends Component {
                     <Link to={{
                     pathname: `portfolio/sellify`,
                     state: { modal: true, returnTo: this.props.location.pathname }
-                    }}
-                    className="btn btn-md btn-primary">Images</Link>
+                    }}>Images</Link>
+                  <br/>
 
                   <p>
                     <a href="https://github.com/greatermeans/sellify" target="_blank">Github Repository </a>

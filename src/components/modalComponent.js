@@ -1,27 +1,27 @@
 import React, { Component }  from 'react'
 import { browserHistory, Router, Route, IndexRoute, Link } from 'react-router'
+import { Modal } from 'react-bootstrap'
+import OnClickOutside from 'react-onclickoutside';
 
-const Modal = React.createClass({
-  styles: {
-    position: 'fixed',
-    top: '20%',
-    right: '20%',
-    bottom: '20%',
-    left: '20%',
-    padding: 20,
-    boxShadow: '0px 0px 150px 130px rgba(0, 0, 0, 0.5)',
-    overflow: 'auto',
-    background: '#fff'
+const modalComponent = OnClickOutside(React.createClass({
+  getInitialState: function() {
+    return {isOpen: this.props.isOpen};
   },
+
+    handleClickOutside: function(instance) {
+      browserHistory.push('/portfolio')
+    },
 
   render() {
     return (
-      <div style={this.styles}>
-        <p><Link to={this.props.returnTo}>Back</Link></p>
-        {this.props.children}
-      </div>
+        <Modal bsSize="lg" show={this.state.isOpen}>
+          <Modal.Body>
+            <p><Link to={this.props.returnTo}>X</Link></p>
+            {this.props.children}
+          </Modal.Body>
+        </Modal>
     )
   }
 })
-
-export default Modal;
+)
+export default modalComponent;
