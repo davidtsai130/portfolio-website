@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Modal } from 'react-bootstrap'
+import FlatironGoCarousel from './flatironGoCarouselComponent'
 
 class FlatironGoComponent extends Component {
 
@@ -10,7 +11,7 @@ class FlatironGoComponent extends Component {
         <Modal.Title id="contained-modal-title-lg">Flatiron Go</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-
+        <FlatironGoCarousel />
       </Modal.Body>
       </div>
     )

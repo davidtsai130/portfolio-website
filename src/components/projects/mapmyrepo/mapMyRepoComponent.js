@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Modal } from 'react-bootstrap'
+import MapMyRepoCarousel from './mapMyRepoCarouselComponent'
 
 class MapMyRepoComponent extends Component {
 
@@ -10,7 +11,7 @@ class MapMyRepoComponent extends Component {
           <Modal.Title id="contained-modal-title-lg">Map My Repo</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-
+          <MapMyRepoCarousel />
         </Modal.Body>
       </div>
     )

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Modal } from 'react-bootstrap'
+import SellifyCarousel from './sellifyCarouselComponent'
+
 
 class SellifyComponent extends Component {
 
@@ -10,7 +12,7 @@ class SellifyComponent extends Component {
           <Modal.Title id="contained-modal-title-lg">Sellify</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-
+          <SellifyCarousel />
         </Modal.Body>
       </div>
     )

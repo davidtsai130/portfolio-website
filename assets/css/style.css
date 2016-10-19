@@ -1271,13 +1271,3 @@ background:#8E44AD;
     text-align:right;
     width:33.33333%;
 }
-
-
-
-
-.modal-container {
-   position: relative;
- }
-.modal-container .modal, .modal-container .modal-backdrop {
-   position: absolute;
-}

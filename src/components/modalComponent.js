@@ -9,7 +9,9 @@ const modalComponent = OnClickOutside(React.createClass({
   },
 
     handleClickOutside: function(instance) {
-      browserHistory.push('/portfolio')
+      if (instance.path[3].className !== 'modal-content' && instance.path[5].className !== 'modal-content' && instance.path[6].className !== 'modal-content') {
+        browserHistory.push('/portfolio')
+      }
     },
 
   render() {
