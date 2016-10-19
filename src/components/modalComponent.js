@@ -15,10 +15,7 @@ const modalComponent = OnClickOutside(React.createClass({
   render() {
     return (
         <Modal bsSize="lg" show={this.state.isOpen}>
-          <Modal.Body>
-            <p><Link to={this.props.returnTo}>X</Link></p>
-            {this.props.children}
-          </Modal.Body>
+          {this.props.children}
         </Modal>
     )
   }

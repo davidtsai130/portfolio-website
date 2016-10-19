@@ -7,9 +7,9 @@ import PortfolioContainer from './containers/portfolioContainer'
 import PortfolioComponent from './components/portfolioComponent'
 import AboutContainer from './containers/aboutContainer'
 import ContactContainer from './containers/contactContainer'
-import FlatironGoComponent from './components/flatironGoComponent'
-import MapMyRepoComponent from './components/mapMyRepoComponent'
-import SellifyComponent from './components/sellifyComponent'
+import FlatironGoComponent from './components/projects/flatironGoComponent'
+import MapMyRepoComponent from './components/projects/mapMyRepoComponent'
+import SellifyComponent from './components/projects/sellifyComponent'
 
 
 export default (
