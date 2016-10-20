@@ -22,7 +22,7 @@ class FooterComponent extends Component {
           					<a href="https://www.instagram.com/daviddtsaii/" target="_blank"><i className="fa fa-instagram" aria-hidden="true"></i></a>
                     <a href="https://medium.com/@david.tsai" target="_blank"><i className="fa fa-medium" aria-hidden="true"></i></a>
           				</p>
-                  <p className="alignright">Built with React JS</p>
+                  <p className="alignright">Built with React JS | <a href="https://github.com/davidtsai130/portfolio-website">Site Repository</a></p>
                 </div>
     					</div>
 

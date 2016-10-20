@@ -9,7 +9,7 @@ const modalComponent = OnClickOutside(React.createClass({
   },
 
     handleClickOutside: function(instance) {
-      if (instance.path[3].className !== 'modal-content' && instance.path[5].className !== 'modal-content' && instance.path[6].className !== 'modal-content') {
+      if (instance.path[1].className !== 'carousel slide' && instance.path[3].className !== 'modal-content' && instance.path[5].className !== 'modal-content' && instance.path[6].className !== 'modal-content') {
         browserHistory.push('/portfolio')
       }
     },
