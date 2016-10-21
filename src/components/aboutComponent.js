@@ -15,7 +15,7 @@ class AboutComponent extends Component {
           </div>
           <div className="col-sm-12 col-md-6 col-lg-6">
             <p>
-              I&#39;m a full stack web developer that is passionate about learning and implementing new technologies. I specialize in Rails and React JS. Check out <Link to="/portfolio"> my portofilio </Link> to see some of the web applications I have worked on and developed.
+              I&#39;m a full stack web developer that is passionate about learning and implementing new technologies. I specialize in Rails and React JS/Redux. Check out <Link to="/portfolio"> my portfolio </Link> to see some of the web applications I have worked on and developed.
             </p>
           </div>
         </div>

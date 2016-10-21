@@ -1217,8 +1217,8 @@ background:#8E44AD;
 
 .hovereffect:hover img {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
-  filter: brightness(0.5);
-  -webkit-filter: brightness(0.5);
+  filter: brightness(0.1);
+  -webkit-filter: brightness(0.1);
 }
 
 .hovereffect h2 {
@@ -1258,16 +1258,42 @@ background:#8E44AD;
 /* ALIGN FOOTER */
 .alignleft {
     float: left;
-    text-align:left;
-    width:33.33333%;
+    text-align: left;
+    width: 33.33333%;
 }
 .aligncenter {
     float: left;
-    text-align:center;
-    width:33.33333%;
+    text-align: center;
+    width: 33.33333%;
 }
 .alignright {
     float: left;
-    text-align:right;
-    width:33.33333%;
+    text-align: right;
+    width: 33.33333%;
+}
+
+.modal-dialog {
+  margin: auto;
+  padding-top: 5%;
+}
+
+.modal-header {
+  border-color: #CCAC00;
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .modal-dialog {
+    width: 750px;
+    padding-top: 10%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal-dialog {
+    padding-top: 15%;
+  }
 }
