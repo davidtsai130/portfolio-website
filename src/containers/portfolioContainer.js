@@ -1,47 +1,27 @@
 import React, { Component } from 'react';
-import Modal from '../components/modalComponent'
-import { browserHistory } from 'react-router'
+import { Grid, Row, Col, Image } from 'react-bootstrap';
+import { Link } from 'react-router'
+import ProjectComponent from '../components/projectComponent'
 
 class PortfolioContainer extends Component {
+  constructor(props){
+  super(props)
+  this.state = {projects: [{'Flatiron Go': 'Meetup Planner'},
+                           {'Map My Repo': 'Find out stuff'},
+                           {'Sellify': 'Sell stuff'}]
+                }
+  }
 
-  componentWillReceiveProps(nextProps) {
-    // if we changed routes...
-    if ((
-      nextProps.location.key !== this.props.location.key &&
-      nextProps.location.state &&
-      nextProps.location.state.modal
-    )) {
-      // save the old children (just like animation)
-      this.previousChildren = this.props.children
-    }
+  mapProjects() {
+    return (this.state.projects.map( (project, idx) => {
+      return <ProjectComponent {...project} key={idx} />
+    }))
   }
 
   render() {
-    let { location } = this.props
-
-    let isModal = (
-      location.state &&
-      location.state.modal &&
-      this.previousChildren
-    )
     return (
-      <div className="container container-margin">
-        <div className="row">
-          <div className="col-lg-12 col-md-12 col-sm-12">
-
-              {isModal ?
-                this.previousChildren :
-                this.props.children
-              }
-
-              {isModal && (
-                <Modal isOpen={true} returnTo={location.state.returnTo}>
-                  {this.props.children}
-                </Modal>
-              )}
-
-          </div>
-        </div>
+      <div>
+        {this.mapProjects()}
       </div>
     )
   }

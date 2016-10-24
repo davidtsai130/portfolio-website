@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
-import { Modal } from 'react-bootstrap'
-import FlatironGoCarousel from './flatironGoCarouselComponent'
+import { Image } from 'react-bootstrap'
 
 class FlatironGoComponent extends Component {
-
   render() {
-    return (
+    return(
       <div>
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-lg">Flatiron Go</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <FlatironGoCarousel />
-      </Modal.Body>
+        <Image className="portfolio_item" src={require('../../../../assets/img/portfolio/flatiron-go/image1.png')} onMouseOver={this.props.handleMouseOver} onMouseOut={this.props.handleMouseOut}/>
       </div>
     )
   }
