@@ -13,15 +13,12 @@ class ProjectComponent extends Component {
                 <h2>{this.props.project.name}</h2>
                 <p>{this.props.project.description}</p>
                 <br/>
-                <p>
                   <Link to={{
                   pathname: `portfolio/${this.props.project.pathName}`,
                   state: { modal: true, returnTo: this.props.location }
                   }}>Images</Link>
-                </p>
-                <p>
+                <br/>
                   <a href={this.props.project.github} target="_blank">Github Repository </a>
-                </p>
             </div>
           </div>
         </Col>
