@@ -6,9 +6,9 @@ import ProjectComponent from '../components/projectComponent'
 class PortfolioContainer extends Component {
   constructor(props){
   super(props)
-  this.state = {projects: [{name: 'Flatiron Go', pathName: 'flatiron-go', description: 'Meetup planner for the Flatiron School community', github: 'https://github.com/gracejuster/flatiron-go'},
-                           {name: 'Map My Repo', pathName: 'mapmyrepo', description: 'Find out where your contributors are from', github: 'https://github.com/greatermeans/mapmyrepo'},
-                           {name: 'Sellify', pathName: 'sellify', description: 'Buy and sell things within organizations', github: 'https://github.com/greatermeans/sellify'}]
+  this.state = {projects: [{name: 'Flatiron Go', pathName: 'flatiron-go', description: 'Plan, join, and attend meetups within the Flatiron School community', github: 'https://github.com/gracejuster/flatiron-go'},
+                           {name: 'Map My Repo', pathName: 'mapmyrepo', description: 'A quick, simple approach to find out where your contributors are from', github: 'https://github.com/greatermeans/mapmyrepo'},
+                           {name: 'Sellify', pathName: 'sellify', description: 'Buy and sell things within your trusted organizations', github: 'https://github.com/greatermeans/sellify'}]
                 }
   }
 

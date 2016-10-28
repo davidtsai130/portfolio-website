@@ -6,22 +6,22 @@ class ProjectComponent extends Component {
   render() {
     return (
       <div>
-        <Col xs={12} sm={6} md={6} lg={6} className="pitem">
+        <Col xs={12} sm={12} md={6} lg={6} className="pitem">
           <div className="hovereffect">
             <Image className="portfolio_item" src={require(`../../assets/img/portfolio/${this.props.project.pathName}/image1.png`)} />
             <div className="overlay">
                 <h2>{this.props.project.name}</h2>
                 <p>{this.props.project.description}</p>
-
-                <Link to={{
-                pathname: `portfolio/${this.props.project.pathName}`,
-                state: { modal: true, returnTo: this.props.location }
-                }}>Images</Link>
-              <br/>
-
-              <p>
-                <a href={this.props.project.github} target="_blank">Github Repository </a>
-              </p>
+                <br/>
+                <p>
+                  <Link to={{
+                  pathname: `portfolio/${this.props.project.pathName}`,
+                  state: { modal: true, returnTo: this.props.location }
+                  }}>Images</Link>
+                </p>
+                <p>
+                  <a href={this.props.project.github} target="_blank">Github Repository </a>
+                </p>
             </div>
           </div>
         </Col>

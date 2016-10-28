@@ -51,7 +51,7 @@ color:#CCAC00;
 }
 body{
 background-color: #252627;
-font-family:'Open Sans', sans-serif;
+font-family:'Helvetica Neue', sans-serif;
 color:#A0A3A4;
 line-height:23px;
 }
@@ -271,7 +271,7 @@ font-size:13px;
 }
 .page-title{
 color:#334852;
-font-family:open sans;
+font-family:'Helvetica Neue', open sans;
 font-size:28px;
 font-weight:300;
 letter-spacing:2px;
@@ -348,7 +348,7 @@ position:absolute;
 top:-5px;
 }
 .features-item h2{
-font-family:open sans;
+font-family:'Helvetica Neue', open sans;
 font-size:18px;
 font-weight:300;
 margin:0 0 15px;
@@ -367,7 +367,7 @@ ul.portfolio-filters li{
 border:2px solid #A0A3A4;
 color:#A0A3A4;
 display:inline-block;
-font-family:pt sans;
+font-family:'Helvetica Neue', pt sans;
 margin:3px;
 padding:5px 15px;
 text-transform:uppercase;
@@ -485,7 +485,7 @@ padding-right:30px;
 }
 .single-testimonial h2{
 color:#CCAC00;
-font-family:open sans;
+font-family:'Helvetica Neue', open sans;
 font-size:20px;
 font-weight:300;
 margin-bottom:25px;
@@ -619,7 +619,7 @@ border:1px solid #ddd;
 }
 .price-title h4{
 color:#666;
-font-family:open sans;
+font-family:'Helvetica Neue', open sans;
 font-size:20px;
 font-weight:300;
 letter-spacing:2px;
@@ -641,7 +641,7 @@ padding:20px;
 text-align:center;
 }
 .plan-price h2 span{
-font-family:open sans;
+font-family:'Helvetica Neue', open sans;
 font-size:15px;
 font-weight:300;
 margin-bottom:0;
@@ -708,7 +708,7 @@ text-align:center;
 font-size:30px;
 }
 .single-count h2{
-font-family:open sans;
+font-family:'Helvetica Neue', open sans;
 font-size:50px;
 font-weight:300;
 letter-spacing:5px;
@@ -769,7 +769,7 @@ padding:40px 0;
 text-align:center;
 }
 .cta-content h2{
-font-family:open sans;
+font-family:'Helvetica Neue', open sans;
 font-size:30px;
 font-weight:300;
 line-height:45px;
@@ -803,7 +803,7 @@ position:relative;
 .single-blog{
 }
 .single-blog h2{
-font-family:open sans;
+font-family:'Helvetica Neue', open sans;
 font-size:25px;
 font-weight:300;
 margin:10px 0 7px;
@@ -1191,8 +1191,8 @@ background:#8E44AD;
   height: 80%;
   left: 10%;
   top: 10%;
-  border-bottom: 1px solid #FFF;
-  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #CCAC00;
+  border-top: 1px solid #CCAC00;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: scale(0,1);
@@ -1222,6 +1222,7 @@ background:#8E44AD;
 }
 
 .hovereffect h2 {
+  margin-top: 10px;
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -1235,6 +1236,10 @@ background:#8E44AD;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(0,-100%,0);
   transform: translate3d(0,-100%,0);
+}
+
+.hovereffect p {
+  font-size: 15px;
 }
 
 .hovereffect a, hovereffect p {
@@ -1290,10 +1295,39 @@ background:#8E44AD;
     width: 750px;
     padding-top: 10%;
   }
+  .hovereffect h2 {
+    font-size: 34px;
+  }
+  .hovereffect p {
+    font-size: 24px;
+  }
+  .hovereffect p a {
+    margin-top: 50px;
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .modal-dialog {
     padding-top: 15%;
   }
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+h3 {
+  display: inline-block;
+  padding-bottom: 10px;
+  position: relative;
+}
+h3:before{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  bottom: 0;
+  border-bottom: 1px solid #CCAC00;
 }
