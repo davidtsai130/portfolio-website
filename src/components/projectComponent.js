@@ -1,12 +1,30 @@
 import React, { Component } from 'react';
+import { Col, Image } from 'react-bootstrap';
+import { Link } from 'react-router'
 
 class ProjectComponent extends Component {
   render() {
-    debugger
     return (
       <div>
+        <Col xs={12} sm={6} md={6} lg={6} className="pitem">
+          <div className="hovereffect">
+            <Image className="portfolio_item" src={require(`../../assets/img/portfolio/${this.props.project.pathName}/image1.png`)} />
+            <div className="overlay">
+                <h2>{this.props.project.name}</h2>
+                <p>{this.props.project.description}</p>
 
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                <Link to={{
+                pathname: `portfolio/${this.props.project.pathName}`,
+                state: { modal: true, returnTo: this.props.location }
+                }}>Images</Link>
+              <br/>
+
+              <p>
+                <a href={this.props.project.github} target="_blank">Github Repository </a>
+              </p>
+            </div>
+          </div>
+        </Col>
       </div>
     )
   }

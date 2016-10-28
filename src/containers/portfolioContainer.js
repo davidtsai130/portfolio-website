@@ -6,22 +6,27 @@ import ProjectComponent from '../components/projectComponent'
 class PortfolioContainer extends Component {
   constructor(props){
   super(props)
-  this.state = {projects: [{'Flatiron Go': 'Meetup Planner'},
-                           {'Map My Repo': 'Find out stuff'},
-                           {'Sellify': 'Sell stuff'}]
+  this.state = {projects: [{name: 'Flatiron Go', pathName: 'flatiron-go', description: 'Meetup planner for the Flatiron School community', github: 'https://github.com/gracejuster/flatiron-go'},
+                           {name: 'Map My Repo', pathName: 'mapmyrepo', description: 'Find out where your contributors are from', github: 'https://github.com/greatermeans/mapmyrepo'},
+                           {name: 'Sellify', pathName: 'sellify', description: 'Buy and sell things within organizations', github: 'https://github.com/greatermeans/sellify'}]
                 }
   }
 
   mapProjects() {
     return (this.state.projects.map( (project, idx) => {
-      return <ProjectComponent {...project} key={idx} />
+      return <ProjectComponent project={project} key={idx} location={this.props.location.pathname}/>
     }))
   }
 
   render() {
     return (
       <div>
-        {this.mapProjects()}
+        <h1> portfolio </h1>
+        <Grid id="portfolio_list">
+          <Row>
+            {this.mapProjects()}
+          </Row>
+        </Grid>
       </div>
     )
   }
