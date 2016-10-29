@@ -1294,13 +1294,22 @@ background:#8E44AD;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 359px) {
   .footer-copyright p {
     font-size: 11px;
   }
+  .hovereffect h2 {
+    font-size: 13px;
+    padding: 0;
+  }
+  .hovereffect p, .hovereffect a {
+    line-height: 1.5;
+    font-size: 10px;
+    margin: 0;
+  }
 }
 
-@media screen and (min-width: 361px) and (max-width: 449px) {
+@media screen and (min-width: 360px) and (max-width: 449px) {
   .hovereffect h2 {
     font-size: 15px;
     padding: 0;
@@ -1323,9 +1332,11 @@ background:#8E44AD;
     padding-top: 10%;
   }
   .hovereffect h2 {
+    padding-bottom: 17px;
     font-size: 34px;
   }
-  .hovereffect p {
+  .hovereffect p, .hovereffect a {
+    line-height: 1.5;
     font-size: 24px;
   }
 }
