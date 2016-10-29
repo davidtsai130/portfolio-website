@@ -1359,3 +1359,7 @@ h3:before{
   bottom: 0;
   border-bottom: 1px solid #CCAC00;
 }
+
+h4 {
+  margin-top: 0;
+}
