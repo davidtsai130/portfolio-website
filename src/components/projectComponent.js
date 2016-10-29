@@ -12,7 +12,6 @@ class ProjectComponent extends Component {
             <div className="overlay">
                 <h2>{this.props.project.name}</h2>
                 <p>{this.props.project.description}</p>
-                <br/>
                   <Link to={{
                   pathname: `portfolio/${this.props.project.pathName}`,
                   state: { modal: true, returnTo: this.props.location }
