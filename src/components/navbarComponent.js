@@ -7,7 +7,7 @@ class NavBarComponent extends Component {
   render() {
     return (
     <div>
-      <Navbar fixedTop>
+      <Navbar fixedTop collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
             <Link to='/'><img src={require('../../assets/img/dtlogo.png')} alt=""/></Link>

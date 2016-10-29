@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 
-var style = {
-  clear: "both"
-}
-
 class FooterComponent extends Component {
   render() {
     return (

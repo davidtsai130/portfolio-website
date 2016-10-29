@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Modal from '../components/modalComponent'
-import { browserHistory } from 'react-router'
 
 class PortfolioPageContainer extends Component {
 

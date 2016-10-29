@@ -1,5 +1,5 @@
-import React, { Component }  from 'react'
-import { browserHistory, Router, Route, IndexRoute, Link } from 'react-router'
+import React from 'react'
+import { browserHistory } from 'react-router'
 import { Modal } from 'react-bootstrap'
 import OnClickOutside from 'react-onclickoutside';
 

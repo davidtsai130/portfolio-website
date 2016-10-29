@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col, Image } from 'react-bootstrap';
-import { Link } from 'react-router'
+import { Grid, Row} from 'react-bootstrap';
 import ProjectComponent from '../components/projectComponent'
 
 class PortfolioContainer extends Component {
