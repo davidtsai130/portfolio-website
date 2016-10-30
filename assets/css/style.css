@@ -1338,6 +1338,7 @@ background:#8E44AD;
   .hovereffect p, .hovereffect a {
     line-height: 1.5;
     font-size: 24px;
+    padding: 0;
   }
 }
 
