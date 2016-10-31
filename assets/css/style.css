@@ -1370,3 +1370,11 @@ h4 {
   color: #CCAC00;
   opacity: 1;
 }
+
+.my-picture {
+  padding-top: 125px;
+  padding-bottom: 125px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
