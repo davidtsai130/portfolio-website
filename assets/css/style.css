@@ -137,7 +137,6 @@ z-index:99;
 max-width:800px;
 }
 .home-parallax, .parallax-bg, #home{
-background:url(../img/demo-images/parallax-bg.jpg) no-repeat fixed center top;
 /*background-size*/
 -webkit-background-size:/*@@prefixmycss->No equivalent*/;
    -moz-background-size:cover;
@@ -320,7 +319,6 @@ opacity:.7;
 
 
 #features{
-background:url(../img/demo-images/parallax-bg.jpg) no-repeat fixed center top;
 /*background-size*/
 -webkit-background-size:/*@@prefixmycss->No equivalent*/;
    -moz-background-size:cover;
@@ -425,7 +423,6 @@ display:block
   z-index: 99;
 }
 .portfolio-detail a{
-background:url("../img/plus.png") no-repeat scroll center center;
 display:block;
 height:100%;
 left:0;
@@ -539,7 +536,6 @@ color:#fff;
 color:#fff;
 }
 .parallax-bg, #parallax_1{
-background:url(../img/demo-images/parallax-one.jpg) no-repeat scroll center top;
 /*background-size*/
 -webkit-background-size:/*@@prefixmycss->No equivalent*/;
    -moz-background-size:cover;
@@ -696,7 +692,6 @@ border-color:#CCAC00;
 /* -----------------------------------	*/
 
 #project-count{
-background:url(../img/demo-images/parallax-one.jpg);
 /*background-size*/
 -webkit-background-size:/*@@prefixmycss->No equivalent*/;
    -moz-background-size:cover;
@@ -1363,4 +1358,15 @@ h3:before{
 
 h4 {
   margin-top: 0;
+}
+
+.close {
+  color: #A0A3A4;
+  opacity: 1;
+  text-shadow: 0 0px 0;
+}
+
+.close:hover {
+  color: #CCAC00;
+  opacity: 1;
 }

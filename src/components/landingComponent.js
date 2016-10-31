@@ -8,6 +8,9 @@ class LandingComponent extends Component {
           Hello, my name David Tsai.<br/>
           I&#39;m a Full Stack Web Developer. <br/>
         </h1>
+
+        <img src={require('../../assets/img/me.jpg')} alt=""/>
+
       </div>
     )
   }
