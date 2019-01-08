@@ -4,11 +4,12 @@ import './assets/css/style.css'
 import './assets/font-awesome-4.6.3/css/font-awesome.min.css'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
-import LandingContainer from './containers/LandingContainer'
 
 import Portfolio from './pages/Portfolio'
+import Landing from './pages/Landing'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Project from './pages/Project'
 
 class App extends Component {
   render() {
@@ -16,10 +17,10 @@ class App extends Component {
       <Router>
         <div>
           <Navbar />
-          <Route exact path="/" component={LandingContainer} />
+          <Route exact path="/" component={Landing} />
           <Switch>
             <Route exact path="/portfolio" component={Portfolio} />
-            <Route path="/portfolio/:project" component={Portfolio} />
+            <Route path="/portfolio/:project" component={Project} />
           </Switch>
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />

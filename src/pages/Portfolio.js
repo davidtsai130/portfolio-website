@@ -1,45 +1,12 @@
 import React, { Component } from 'react'
 import { Grid, Row } from 'react-bootstrap'
-import Project from '../components/Project'
+import ProjectItem from '../components/display/ProjectItem'
+import { PROJECTS } from '../constants/projects'
 
 class PortfolioContainer extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      projects: [
-        {
-          name: 'Flatiron Go',
-          pathName: 'flatiron-go',
-          description:
-            'Plan, join, and attend meetups within the Flatiron School community',
-          github: 'https://github.com/gracejuster/flatiron-go'
-        },
-        {
-          name: 'Map My Repo',
-          pathName: 'mapmyrepo',
-          description:
-            'A quick, simple approach to find out where your contributors are from',
-          github: 'https://github.com/greatermeans/mapmyrepo'
-        },
-        {
-          name: 'Sellify',
-          pathName: 'sellify',
-          description: 'Buy and sell things within your trusted organizations',
-          github: 'https://github.com/greatermeans/sellify'
-        }
-      ]
-    }
-  }
-
-  mapProjects() {
-    return this.state.projects.map((project, idx) => {
-      return (
-        <Project
-          project={project}
-          key={idx}
-          location={this.props.location.pathname}
-        />
-      )
+  get mapProjects() {
+    return PROJECTS.map((project, i) => {
+      return <ProjectItem project={project} key={i} />
     })
   }
 
@@ -48,7 +15,7 @@ class PortfolioContainer extends Component {
       <div>
         <h1> portfolio </h1>
         <Grid id="portfolio_list">
-          <Row>{this.mapProjects()}</Row>
+          <Row>{this.mapProjects}</Row>
         </Grid>
       </div>
     )

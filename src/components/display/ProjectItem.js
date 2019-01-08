@@ -9,7 +9,7 @@ class Project extends Component {
         <div className="hovereffect">
           <Image
             className="portfolio_item"
-            src={require(`../assets/img/portfolio/${
+            src={require(`../../assets/img/portfolio/${
               this.props.project.pathName
             }/image1.png`)}
           />
@@ -18,11 +18,10 @@ class Project extends Component {
             <p>{this.props.project.description}</p>
             <Link
               to={{
-                pathname: `portfolio/${this.props.project.pathName}`,
-                state: { modal: true, returnTo: this.props.location }
+                pathname: `portfolio/${this.props.project.pathName}`
               }}
             >
-              Images
+              See More
             </Link>
             <br />
             <a

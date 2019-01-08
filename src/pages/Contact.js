@@ -11,7 +11,7 @@ class ContactContainer extends Component {
                 <h1> let&#39;s connect! </h1>
                 <br />
                 <h3> Email </h3>
-                <h4> david.tsai@rutgers.edu </h4>
+                <h4> davidtsai130@gmail.com </h4>
               </div>
             </div>
           </div>
