@@ -9,7 +9,9 @@ export const PROJECTS = [
       require('../assets/img/portfolio/flatiron-go/image1.png'),
       require('../assets/img/portfolio/flatiron-go/image2.png'),
       require('../assets/img/portfolio/flatiron-go/image3.png')
-    ]
+    ],
+    appDesc:
+      'My first project built in Flatiron School with two other classmates using Ruby on Rails'
   },
   {
     name: 'Map My Repo',
@@ -21,7 +23,9 @@ export const PROJECTS = [
       require('../assets/img/portfolio/map-my-repo/image1.png'),
       require('../assets/img/portfolio/map-my-repo/image2.png'),
       require('../assets/img/portfolio/map-my-repo/image3.png')
-    ]
+    ],
+    appDesc:
+      'Vanilla JS project built in Flatiron School with two other classmates'
   },
   {
     name: 'Sellify',
@@ -33,6 +37,8 @@ export const PROJECTS = [
       require('../assets/img/portfolio/sellify/image2.png'),
       require('../assets/img/portfolio/sellify/image3.png'),
       require('../assets/img/portfolio/sellify/image4.png')
-    ]
+    ],
+    appDesc:
+      'The final project of Flatiron School, built with three other classmates using Ruby on Rails for the backend and React and Redux for the frontend'
   }
 ]

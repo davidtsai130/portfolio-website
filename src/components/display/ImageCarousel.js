@@ -3,12 +3,6 @@ import { Carousel } from 'react-bootstrap'
 import { PROJECTS } from '../../constants/projects'
 
 class ImageCarousel extends Component {
-  get renderTitle() {
-    const project = PROJECTS.filter(
-      project => project.pathName === this.props.pathName
-    )
-    return project[0].name
-  }
   get renderImages() {
     const project = PROJECTS.filter(
       project => project.pathName === this.props.pathName
@@ -21,12 +15,7 @@ class ImageCarousel extends Component {
   }
 
   render() {
-    return (
-      <div>
-        <h1>{this.renderTitle}</h1>
-        <Carousel>{this.renderImages}</Carousel>
-      </div>
-    )
+    return <Carousel>{this.renderImages}</Carousel>
   }
 }
 export default ImageCarousel
