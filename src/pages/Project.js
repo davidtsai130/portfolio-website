@@ -8,10 +8,14 @@ class Project extends Component {
       project => project.pathName === this.props.match.params.project
     )
     return (
-      <div>
-        <h1>{project[0].name}</h1>
+      <div className="container">
+        <div className="header-padding">
+          <h1 className="text-centered">{project[0].name}</h1>
+        </div>
         <ImageCarousel pathName={this.props.match.params.project} />
-        <h4>{project[0].appDesc}</h4>
+        <div className="project-description">
+          <h4>{project[0].appDesc}</h4>
+        </div>
       </div>
     )
   }

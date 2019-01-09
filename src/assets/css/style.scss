@@ -149,9 +149,7 @@ section.section-padding {
 .parallax-bg,
 #home {
   /*background-size*/
-  -webkit-background-size:/*@@prefixmycss->No equivalent*/ ;
   -moz-background-size: cover;
-  -o-background-size:/*@@prefixmycss->No equivalent*/ ;
   background-size: cover;
 }
 .home-parallax,
@@ -229,6 +227,15 @@ section.section-padding {
 /*  		 2. Navigation Bar			*/
 /* -----------------------------------	*/
 
+.navbar-nav {
+  padding-top: 5px;
+}
+
+.navbar-header {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
 .navbar-default a.navbar-brand {
   color: #ccac00;
   font-weight: 300;
@@ -258,6 +265,7 @@ section.section-padding {
 .navbar-default {
   background-color: #171717;
   border-color: #171717;
+  width: 100%;
 }
 .is-sticky .navbar.navbar-default.navbar-static-top {
   width: 100%;
@@ -280,6 +288,12 @@ section.section-padding {
 .navbar-default .navbar-nav > .active > a:focus {
   color: #ccac00;
   background-color: #171717;
+}
+
+a:hover,
+a:focus {
+  color: #a0a3a4;
+  text-decoration: none;
 }
 
 /* ------------------------------------	*/
@@ -336,9 +350,7 @@ section.section-padding {
 
 #features {
   /*background-size*/
-  -webkit-background-size:/*@@prefixmycss->No equivalent*/ ;
   -moz-background-size: cover;
-  -o-background-size:/*@@prefixmycss->No equivalent*/ ;
   background-size: cover;
 }
 .features-bg {
@@ -556,9 +568,7 @@ ul.portfolio-filters li:hover {
 .parallax-bg,
 #parallax_1 {
   /*background-size*/
-  -webkit-background-size:/*@@prefixmycss->No equivalent*/ ;
   -moz-background-size: cover;
-  -o-background-size:/*@@prefixmycss->No equivalent*/ ;
   background-size: cover;
 }
 .parallax-bg:before {
@@ -716,9 +726,7 @@ ul.portfolio-filters li:hover {
 
 #project-count {
   /*background-size*/
-  -webkit-background-size:/*@@prefixmycss->No equivalent*/ ;
   -moz-background-size: cover;
-  -o-background-size:/*@@prefixmycss->No equivalent*/ ;
   background-size: cover;
   color: #fff;
   position: relative;
@@ -1457,4 +1465,32 @@ h4 {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+.top-right {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+@mixin centered {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.carousel {
+  @include centered;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.project-description {
+  @include centered;
+  padding-top: 40px;
+}
+
+.header-padding {
+  padding-bottom: 15px;
 }

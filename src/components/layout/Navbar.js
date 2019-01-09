@@ -1,14 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarNav,
-  NavItem,
-  NavLink,
-  NavbarToggler,
-  Collapse
-} from 'mdbreact'
+
+import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
 class Navbar1 extends Component {
   constructor(props) {
@@ -22,26 +15,28 @@ class Navbar1 extends Component {
 
   render() {
     return (
-      <Navbar dark expand="md">
-        <NavbarBrand>
-          <Link to="/">
-            <img src={require('../../assets/img/dtlogo.png')} alt="" />
-          </Link>
-        </NavbarBrand>
-        <NavbarToggler onClick={this.toggleCollapse} />
-        <Collapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-          <NavbarNav right>
+      <Navbar className="container" collapseOnSelect>
+        <Navbar.Header>
+          <Navbar.Brand>
+            <Link to="/">
+              <img src={require('../../assets/img/dtlogo.png')} alt="" />
+            </Link>
+          </Navbar.Brand>
+        </Navbar.Header>
+        <Navbar.Toggle className="top-right" />
+        <Navbar.Collapse>
+          <Nav pullRight>
             <NavItem>
-              <NavLink to="/portfolio">Portfolio</NavLink>
+              <Link to="/portfolio">Portfolio</Link>
             </NavItem>
             <NavItem>
-              <NavLink to="/about">About</NavLink>
+              <Link to="/about">About</Link>
             </NavItem>
             <NavItem>
-              <NavLink to="/contact">Contact</NavLink>
+              <Link to="/contact">Contact</Link>
             </NavItem>
-          </NavbarNav>
-        </Collapse>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
     )
   }

@@ -12,7 +12,7 @@ class PortfolioContainer extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container container-margin">
         <h1> portfolio </h1>
         <Grid id="portfolio_list">
           <Row>{this.mapProjects}</Row>

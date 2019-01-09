@@ -15,7 +15,11 @@ class ImageCarousel extends Component {
   }
 
   render() {
-    return <Carousel>{this.renderImages}</Carousel>
+    return (
+      <div className="carousel">
+        <Carousel>{this.renderImages}</Carousel>
+      </div>
+    )
   }
 }
 export default ImageCarousel

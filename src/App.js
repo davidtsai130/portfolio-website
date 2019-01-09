@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import './assets/css/style.css'
+import './assets/css/style.scss'
 import './assets/font-awesome-4.6.3/css/font-awesome.min.css'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
