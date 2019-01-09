@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { SKILLS } from '../constants/skills'
-import { Grid, Row, Col } from 'react-bootstrap'
+import { Grid, Row } from 'react-bootstrap'
 
 import AboutMe from '../components/display/AboutMe'
 import Skills from '../components/display/Skills'
