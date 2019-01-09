@@ -13,7 +13,7 @@ class Landing extends Component {
                   <h1>
                     Hey, my name David.
                     <br />
-                    I&#39;m a Full Stack Web Developer. <br />
+                    I&#39;m a Frontend Developer. <br />
                   </h1>
                 </Col>
                 <Col xs={12} sm={12} md={6} lg={6}>
