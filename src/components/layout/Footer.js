@@ -28,7 +28,7 @@ class FooterComponent extends Component {
                       <i className="fa fa-facebook-square" aria-hidden="true" />
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/david-tsai-33819a60"
+                      href="https://www.linkedin.com/in/tsai-david"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
